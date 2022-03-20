@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agerisantoxer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div id="main-sheet" class="fullscreen">
+  <div id="canvas" class="fullscreen"></div>
+  <div id="stopwatch-container" class="fullscreen">
+    <div id="stopwatch-holder" class="unselectable">
+      <p id="date-str"></p>
+      <p id="time-str"></p>
+      gfsgs
+    </div>
+  </div>
+</div>
+<div id="loading-sheet" class="fullscreen">
+  <div class="lds-heart"><div></div></div>
+</div>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="moment.js"></script>
+<script src="moment-tz.js"></script>
+<script src="vanta/three.r119.min.js"></script>
+<script src="vanta/vanta.birds.min.js"></script>
+<script src="stopwatch.js"></script>
+<script src="loading.js"></script>
+<script>
+  VANTA.BIRDS({
+    el: "#canvas",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x26b1a2,
+    birdSize: 1.70,
+    separation: 100.00,
+    cohesion: 1.00
+  })
+</script>
+</body>
+</html>
