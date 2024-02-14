@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Kelly Slab';
-    src: url('fonts/KellySlab-Regular.ttf');
+    src: url('src/fontsSlab-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Neucha';
-    src: url('fonts/Neucha-Regular.ttf');
+    src: url('src/fontsa-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,7 +32,7 @@ body {
     color: whitesmoke;
     font-weight: 900;
     text-shadow: 1px 1px 1px #000;
-    font-size: 3.55vw;
+    font-size: 2vw;
     font-family: 'Neucha', cursive;
 }
 
@@ -119,5 +119,11 @@ body {
     }
     100% {
         transform: scale(0.9);
+    }
+}
+
+@media (max-width: 680px) {
+    #stopwatch-container {
+        font-size: 1.2rem;
     }
 }

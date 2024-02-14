@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  client:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
+    env_file:
+      - .env
+    expose:
+      - "${VIRTUAL_PORT}"
+    networks:
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external:
+      name: net-nginx-proxy
