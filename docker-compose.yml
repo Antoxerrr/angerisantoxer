@@ -5,6 +5,7 @@ services:
     image: nginx
     volumes:
       - ./src:/usr/share/nginx/html
+      - ./nginx:/etc/nginx/conf.d
     env_file:
       - .env
     expose:
